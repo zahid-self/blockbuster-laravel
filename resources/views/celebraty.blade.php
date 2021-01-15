@@ -122,7 +122,6 @@
 															<p class="time">{{ $movie['character'] }}</p>
 														</div>
 													</div>
-													<p>2016</p>
 												</div>
 											@endforeach											
 										</div>

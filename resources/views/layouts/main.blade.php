@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <head>
-	<!-- Basic need -->
 	<title>Block Buster Movies</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="">
-	<link rel="profile" href="#">
-
     <!--Google Font-->
     <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />
 	<!-- Mobile specific meta -->
@@ -30,47 +27,6 @@
     </div>
 </div>
 <!--end of preloading-->
-<!--login form popup-->
-<div class="login-wrapper" id="login-content">
-    <div class="login-content">
-        <a href="#" class="close">x</a>
-        <h3>Login</h3>
-        <form method="post" action="#">
-        	<div class="row">
-        		 <label for="username">
-                    Username:
-                    <input type="text" name="username" id="username" placeholder="Hugh Jackman" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
-                </label>
-        	</div>
-           
-            <div class="row">
-            	<label for="password">
-                    Password:
-                    <input type="password" name="password" id="password" placeholder="******" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
-                </label>
-            </div>
-            <div class="row">
-            	<div class="remember">
-					<div>
-						<input type="checkbox" name="remember" value="Remember me"><span>Remember me</span>
-					</div>
-            		<a href="#">Forget password ?</a>
-            	</div>
-            </div>
-           <div class="row">
-           	 <button type="submit">Login</button>
-           </div>
-        </form>
-        <div class="row">
-        	<p>Or via social</p>
-            <div class="social-btn-2">
-            	<a class="fb" href="#"><i class="ion-social-facebook"></i>Facebook</a>
-            	<a class="tw" href="#"><i class="ion-social-twitter"></i>twitter</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!--end of login form popup-->
 <!-- BEGIN | Header -->
 <header class="ht-header full-width-hd">
     <div class="row">
@@ -85,7 +41,7 @@
                         <span></span>
                     </div>
                 </div>
-                <a href="{{ route('movies.index') }}"><img class="logo" src="images/logo1.png" alt="" width="119" height="58"></a>
+                <a href="{{ route('home') }}"><img class="logo" src="images/logo1.png" alt="" width="119" height="58"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
@@ -94,7 +50,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="dropdown first">
-                        <a href="{{ route('movies.index') }}">
+                        <a href="{{ route('home') }}">
                         Home 
                         </a>
                     </li>	
@@ -108,22 +64,8 @@
                         actors 
                         </a>
                     </li>
-                    <li class="dropdown first">
-                        <a class="btn btn-default dropdown-toggle lv1">
-                        news 
-                        </a>
-                    </li>
-                    <li class="dropdown first">
-                        <a class="btn btn-default dropdown-toggle lv1">
-                        community 
-                        </a>
-                    </li>
                 </ul>
                 @livewire('search-dropdown')
-                <ul class="nav navbar-nav flex-child-menu menu-right">
-                    <li class="loginLink"><a href="#">LOG In</a></li>
-                    <li class="btn signupLink"><a href="#">sign up</a></li>
-                </ul>
             </div>
         <!-- /.navbar-collapse -->
     </nav>
@@ -170,14 +112,6 @@
 					<li><a href="#">Collections</a></li>
 					<li><a href="#">User Guide</a></li>
 				</ul>
-			</div>
-			<div class="flex-child-ft item5">
-				<h4>Newsletter</h4>
-				<p>Subscribe to our newsletter system now <br> to get latest news from us.</p>
-				<form action="#">
-					<input type="text" placeholder="Enter your email">
-				</form>
-				<a href="#" class="btn">Subscribe now <i class="ion-ios-arrow-forward"></i></a>
 			</div>
 		</div>
 		<div class="ft-copyright">

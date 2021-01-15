@@ -20,7 +20,7 @@ use App\Http\Controllers\UserController;
 //     return view('welcome');
 // });
 
-Route::get('/', 'App\Http\Controllers\MoviesController@index')->name('movies.index');
+Route::get('/', 'App\Http\Controllers\MoviesController@index')->name('home');
 
 Route::get('/movies/{movie}', 'App\Http\Controllers\MoviesController@show')->name('movies.show');
 Route::get('/profile', 'App\Http\Controllers\UserController@index')->name('user.profile');
