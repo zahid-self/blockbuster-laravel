@@ -22,6 +22,8 @@ class MoviesController extends Controller
             ->get('https://api.themoviedb.org/3/movie/now_playing?')
             ->json()['results'];
 
+        dd($latestMovies);
+
         $popularMovies = Http::withToken(config('services.tmdb.token'))
             ->get('https://api.themoviedb.org/3/movie/popular')
             ->json()['results'];
